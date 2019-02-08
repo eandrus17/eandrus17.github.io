@@ -1,0 +1,19 @@
+h1 {
+  color:white;
+  text-align:center;
+  font-style:bold;
+  text-shadow: 2px 2px black;
+  font-size: 40px; 
+}
+p {
+  color: white;
+  text-align:center;
+  font-size: 20px;
+  text-shadow: 2px 2px black
+}
+body { 
+      background-image:url('http://eskipaper.com/images/amazing-mountain-stream-wallpaper-1.jpg');
+  background-repeat:no-repeat;
+  background-size:100%;
+  
+    }
