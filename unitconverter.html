@@ -1,21 +1,38 @@
 <html>
   <head>
-    <link rel="stylesheet" href="unitconverter.css">
+    <!-- call css file-->
+    <link rel="stylesheet" href="styles.css">
     <title> Unit Converter </title>
-
-    
-  </head>
+    </head>
+  
   <body>
     <h1> Unit Converter </h1>
-    <p> Input Value: </p>
-    <p> Input Units: </p>
-<input type="radio" name="inunits" value="inches"> Inches <br>
-<input type="radio" name="inunits" value="feet"> Feet <br>
+    <p> Input Value: 
+    <input type="text"> 
+    </p>
+    
+    <p> Input Units: 
+   <!-- radio buttons -->
+<input type="radio" name="inunits" value="inches"> Inches 
+<input type="radio" name="inunits" value="feet"> Feet 
 <input type="radio" name="inunits" value="yards"> Yards <br>
-<input type="radio" name="inunits" value="miles"> Miles <br>                 
-<input type="radio" name="inunits" value="meters"> Meters <br>
-<input type="radio" name="inunits" value="kilometers"> Kilometers <br>
-   
-      
+<input type="radio" name="inunits" value="miles"> Miles                
+<input type="radio" name="inunits" value="meters"> Meters
+<input type="radio" name="inunits" value="kilometers"> Kilometers </p>
+    
+     <p> Output Units: </p>
+   <!-- radio buttons -->
+<p> <input type="radio" name="outunits" value="inches"> Inches 
+<input type="radio" name="outunits" value="feet"> Feet 
+<input type="radio" name="outunits" value="yards"> Yards <br>
+<input type="radio" name="outunits" value="miles"> Miles                 
+<input type="radio" name="outunits" value="meters"> Meters
+<input type="radio" name="outunits" value="kilometers"> Kilometers </p>
+    
+    <!--Convert button-->
+<div>
+     <p> <button id="myBtn" onclick="unitconverter()">Convert</button> </p>
+</div>
+         
   </body>
 </html>
