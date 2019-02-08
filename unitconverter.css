@@ -15,5 +15,14 @@ body {
       background-image:url('http://eskipaper.com/images/amazing-mountain-stream-wallpaper-1.jpg');
   background-repeat:no-repeat;
   background-size:100%;
-  
-    }
+}
+button {
+  background-color: #2C540D; /* Green */
+  border: 2px solid white;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
