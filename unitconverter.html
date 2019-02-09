@@ -11,36 +11,36 @@
   
   <body>
     <h1> Unit Converter </h1>
-    <p> Input Value: </p>
+    <p> Input Value:
     <div>
-      <p> <input type="text" id=invalue> </p>
+      <input type="text" id=invalue>
     </div> 
-    
+     </p>
     <p> Input Units: </p> 
    <!-- radio buttons -->
       <div>
-      <p> <select id = "inunits">
-  <input type="radio" name="inunits" value="inches"> Inches 
+ <p>
+ <input type="radio" name="inunits" value="inches"> Inches 
 <input type="radio" name="inunits" value="feet"> Feet 
 <input type="radio" name="inunits" value="yards"> Yards <br>
 <input type="radio" name="inunits" value="miles"> Miles                 
 <input type="radio" name="inunits" value="meters"> Meters
 <input type="radio" name="inunits" value="kilometers"> Kilometers 
-        </select> </p>
+</p>
     </div>
     
      <p> Output Units: </p>
    <!-- radio buttons -->
-<select id="outunits">
+<div>
   <p> <input type="radio" name="outunits" value="inches"> Inches 
 <input type="radio" name="outunits" value="feet"> Feet 
 <input type="radio" name="outunits" value="yards"> Yards <br>
 <input type="radio" name="outunits" value="miles"> Miles                 
 <input type="radio" name="outunits" value="meters"> Meters
 <input type="radio" name="outunits" value="kilometers"> Kilometers </p>
-  </select>
   </div>
-    <!--Convert button-->
+    
+  <!--Convert button-->
    <div>
      <p> <button id="myBtn" onclick="unitconverter()">Convert</button> </p>
 </div>
