@@ -1,6 +1,6 @@
 function unitconverter(x){
 var x = document.getElementById("invalue")
-var inunits = document.document.getElementById("inunits")
+var inunits = document.getElementById("inunits")
 var outunits = document.getElementById("outunits")
 var output;
   
