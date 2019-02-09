@@ -1,7 +1,7 @@
 function unitconverter(x){
-var x = document.GetElementById("invalue")
-var inunits = document.document.GetElementById("inunits")
-var outunits = document.GetElementById("outunits")
+var x = document.getElementById("invalue")
+var inunits = document.document.getElementById("inunits")
+var outunits = document.getElementById("outunits")
 var output;
   
  // inches to something else
