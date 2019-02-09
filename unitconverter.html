@@ -1,14 +1,18 @@
+<!--Thanks Bruce for your help!!-->
 <html>
   <head>
     <!-- call css file-->
     <link rel="stylesheet" href="unitconverter.css">
-    <title> Unit Converter </title>
-    </head>
+    <title> Unit Converter </title>  
+    <!-- link to javascript-->
+    <script src="unitconverter.js">
+    </script>
+  </head>
   
   <body>
     <h1> Unit Converter </h1>
     <p> Input Value: 
-    <input type="text"> 
+    <input type="text" id=invalue> 
     </p>
     
     <p> Input Units: 
@@ -16,7 +20,7 @@
 <input type="radio" name="inunits" value="inches"> Inches 
 <input type="radio" name="inunits" value="feet"> Feet 
 <input type="radio" name="inunits" value="yards"> Yards <br>
-<input type="radio" name="inunits" value="miles"> Miles                
+<input type="radio" name="inunits" value="miles"> Miles                 
 <input type="radio" name="inunits" value="meters"> Meters
 <input type="radio" name="inunits" value="kilometers"> Kilometers </p>
     
@@ -28,11 +32,11 @@
 <input type="radio" name="outunits" value="miles"> Miles                 
 <input type="radio" name="outunits" value="meters"> Meters
 <input type="radio" name="outunits" value="kilometers"> Kilometers </p>
-    
+
     <!--Convert button-->
-<div>
+   <div>
      <p> <button id="myBtn" onclick="unitconverter()">Convert</button> </p>
 </div>
-         
+      
   </body>
 </html>
