@@ -93,11 +93,14 @@ var output;
   }
   else if (inunits=="meters"&& outunits=="feet"){
     output= x + " " + inunits + " = " + x*3.281 + " " + outunits;
-  }else if (inunits=="meter"&& outunits=="yards"){
+  }
+  else if (inunits=="meter"&& outunits=="yards"){
     output= x + " " + inunits + " = " + x*1.094 + " " + outunits;
-  }else if (inunits=="meters"&& outunits=="miles"){
+  }
+  else if (inunits=="meters"&& outunits=="miles"){
     output= x + " " + inunits + " = " + x/1609.344 + " " + outunits;
-  }else if (inunits=="meters"&& outunits=="kilometers"){
+  }
+  else if (inunits=="meters"&& outunits=="kilometers"){
     output= x + " " + inunits + " = " + x/1000 + " " + outunits;
   } 
   
