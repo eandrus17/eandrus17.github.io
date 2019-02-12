@@ -4,6 +4,17 @@ h1 {
   font-style:bold;
   font-size: 40px; 
 }
+h2 {
+  color: black;
+  text-align: left;
+  font-size: 20px;
+} 
+h3 {
+  color: black;
+  font-style: bold;
+  text-align: center;
+  font-size: 20px;
+}
 p {
   color: black;
   text-align:center;
