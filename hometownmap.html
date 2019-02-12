@@ -5,7 +5,7 @@
     <title>Yreka, CA</title>
     <link rel="stylesheet" href="hometownmap.css">
     <style>
-      #Yrekamap {
+      #map {
         height: 600px
         width: 80%;
       }
@@ -16,8 +16,9 @@
     <h1> Hometown Map-Yreka, CA</h1>
      <div id="Yrekamap"></div>
     <script>
+      var mapvar;
       function showmap() {
-       var mapvar = new google.maps.Map(document.getElementById('Yrekamap'), {
+        mapvar = new google.maps.Map(document.getElementById('Yrekamap'), {
           center: {lat: 41.7335406, lng: -122.6484536},
           zoom: 8
         });
@@ -92,7 +93,7 @@ bbearwindow.open(mapvar, markbbear);
 });      
       }
     </script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXS6eLxCWdf31JokswS3GbO582iuY0PqI&callback=showmap">
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXS6eLxCWdf31JokswS3GbO582iuY0PqI&callback=showmap" async defer>
     </script>
     
   </body>
