@@ -5,7 +5,7 @@
     <title>Yreka, CA</title>
     <link rel="stylesheet" href="hometownmap.css">
     <style>
-      #map {
+      #mymap {
         height: 600px
         width: 80%;
       }
@@ -14,21 +14,20 @@
   </head>
   <body>
     <h1> Hometown Map-Yreka, CA</h1>
-     <div id="Yrekamap"></div>
+     <div id="mymap"></div>
     <script>
-      var mapvar;
       function showmap() {
-        mapvar = new google.maps.Map(document.getElementById('Yrekamap'), {
+       var mapvar = new google.maps.Map(document.getElementById('mymap'), {
           center: {lat: 41.7335406, lng: -122.6484536},
           zoom: 8
         });
         
 //define coordinates for markers
-      var homeXY = {lat:41.735415, lng:-122.610963}
-      var churchXY = {lat:41.734513, lng:-122.651745} 
-      var schoolXY = {lat:41.741260, lng:-122.637688}
-      var northXY = {lat:41.736260, lng:-122.652923}
-      var bbearXY = {lat:41.704157, lng:-122.645403}
+      var homeXY = {lat:41.735415, lng:-122.610963};
+      var churchXY = {lat:41.734513, lng:-122.651745}; 
+      var schoolXY = {lat:41.741260, lng:-122.637688};
+      var northXY = {lat:41.736260, lng:-122.652923};
+      var bbearXY = {lat:41.704157, lng:-122.645403};
       
 //what the windows will say      
       var homeinfo = '<h3>Home</h3><h2> We moved into this house in April 2013, when I was finishing my senior year of high school. Even though I only lived there for a few months before moving to Utah for school, it is still home when I go back. The house is on 40 acres of land, and our friend owns the neighboring 40. It makes for some good hiking and fourwheeling.</h2>';
