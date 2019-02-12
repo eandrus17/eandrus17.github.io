@@ -17,7 +17,7 @@
      <div id="mymap"></div>
     <script>
       function showmap() {
-       var mapvar = new google.maps.Map(document.getElementById('mymap'), {
+       var mapvar = new google.maps.Map(document.getElementById('mymap'),{
           center: {lat: 41.7335406, lng: -122.6484536},
           zoom: 8
         });
@@ -92,7 +92,8 @@ bbearwindow.open(mapvar, markbbear);
 });      
       }
     </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXS6eLxCWdf31JokswS3GbO582iuY0PqI&callback=showmap" async defer>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXS6eLxCWdf31JokswS3GbO582iuY0PqI&callback=showmap" async defer>
     </script>
     
   </body>
