@@ -5,7 +5,7 @@ var outunits = document.getElementById("outunits")
 var output;
   
  // inches to something else
- if  (inunits=="inches" && outunits=="inches"){
+ if  (inunits[0].checked && outunits[0].checked){
    output= x + " " + inunits;
  }
   else if (inunits=="inches"&& outunits=="feet"){
