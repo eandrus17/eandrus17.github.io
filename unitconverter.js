@@ -6,7 +6,7 @@ var output;
   
  // inches to something else
  if  (inunits[0].checked && outunits[0].checked){
-   output= x + " " + inunits.value;
+   output= x + " " + inunits.value + " = " + x + " " + outunits.value;
  }
   else if (inunits[0].checked && outunits[1].checked){
     output= x + " " + inunits.value + " = " + x/12 + " " + outunits.value;
@@ -26,7 +26,7 @@ var output;
   
   // feet to something else
   if  (inunits[1].checked && outunits[1].checked){
-   output= x + " " + inunits;
+   output= x + " " + inunits.value + " = " + x + " " + outunits.value;
  }
   else if (inunits[1].checked && outunits[0].checked){
     output= x + " " + inunits + " = " + x*12 + " " + outunits;
@@ -46,7 +46,7 @@ var output;
   
   // yards to something else
   if  (inunits[2].checked && outunits[2].checked){
-   output= x + " " + inunits;
+   output= x + " " + inunits.value + " = " + x + " " + outunits.value;
  }
   else if (inunits[2].checked && outunits[0].checked){
     output= x + " " + inunits + " = " + x*36 + " " + outunits;
@@ -66,7 +66,7 @@ var output;
   
   // miles to something else
   if  (inunits[3].checked && outunits[3].checked){
-   output= x + " " + inunits;
+   output= x + " " + inunits.value + " = " + x + " " + outunits.value;
  }
   else if (inunits[3].checked && outunits[0].checked){
     output= x + " " + inunits + " = " + x*63360 + " " + outunits;
@@ -86,7 +86,7 @@ var output;
   
   // meters to something else
   if  (inunits[4].checked && outunits[4].checked){
-   output= x + " " + inunits;
+   output= x + " " + inunits.value + " = " + x + " " + outunits.value;
  }
   else if (inunits[4].checked && outunits[0].checked){
     output= x + " " + inunits + " = " + x*39.37 + " " + outunits;
@@ -106,7 +106,7 @@ var output;
   
   // kilometers to something else
   if  (inunits[5].checked && outunits[5].checked){
-   output= x + " " + inunits;
+  output= x + " " + inunits.value + " = " + x + " " + outunits.value;
  }
   else if (inunits[5].checked && outunits[0].checked){
     output= x + " " + inunits + " = " + x*39370.079 + " " + outunits;
