@@ -1,12 +1,14 @@
 function unitconverter(x){
 var x = document.getElementById("invalue").value
-var inunits = document.getElementsByName("inunits").value
-var outunits = document.getElementsByName("outunits").value
+var inunits = document.getElementsByName("inunits")
+var outunits = document.getElementsByName("outunits")
+var inun = document.getElementsByName("inunits").value
+var outun = document.getElementsByName("outunits").value
 var output;
   
  // inches to something else
  if  (inunits[0].checked && outunits[0].checked){
-   output= x + " " + inunits + " = " + x + " " + outunits;
+   output= x + " " + inun + " = " + x + " " + outun;
  }
   else if (inunits[0].checked && outunits[1].checked){
     output= x + " " + inunits + " = " + x/12 + " " + outunits;
