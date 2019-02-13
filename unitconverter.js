@@ -1,5 +1,5 @@
 function unitconverter(x){
-var x = document.getElementById("invalue")
+var x = document.getElementById("invalue").value
 var inunits = document.getElementsByName("inunits")
 var outunits = document.getElementsByName("outunits")
 var output;
