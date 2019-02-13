@@ -5,22 +5,22 @@ var outunits = document.getElementsByName("outunits")
 var output;
   
  // inches to something else
- if  (inunits=="inches"&& outunits=="inches"){
+ if  (inunits[0].checked && outunits[0].checked){
    output= x + " " + inunits;
  }
-  else if (inunits=="inches"&& outunits=="feet"){
+  else if (inunits[0].checked && outunits[1].checked){
     output= x + " " + inunits + " = " + x/12 + " " + outunits;
   }
-  else if (inunits=="inches"&& outunits=="yards"){
+  else if (inunits[0].checked && outunits[2].checked){
     output= x + " " + inunits + " = " + x/36 + " " + outunits;
   }
-  else if (inunits=="inches"&& outunits=="miles"){
+  else if (inunits[0].checked && outunits[3].checked){
     output= x + " " + inunits + " = " + x/63360 + " " + outunits;
   }
-  else if (inunits=="inches"&& outunits=="meters"){
+  else if (inunits[0].checked && outunits[4].checked){
     output= x + " " + inunits + " = " + x/39.37 + " " + outunits;
   }
-  else if (inunits=="inches"&& outunits=="kilometers"){
+  else if (inunits[0].checked && outunits[5].checked){
     output= x + " " + inunits + " = " + x/39370.079 + " " + outunits;
   }
   
