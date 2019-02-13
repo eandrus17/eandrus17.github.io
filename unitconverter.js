@@ -1,11 +1,11 @@
 function unitconverter(x){
 var x = document.getElementById("invalue")
-var inunits = document.getElementById("inunits")
-var outunits = document.getElementById("outunits")
+var inunits = document.getElementByName("inunits")
+var outunits = document.getElementByName("outunits")
 var output;
   
  // inches to something else
- if  (inunits[0].checked && outunits[0].checked){
+ if  (inunits=="inches"&& outunits=="inches"){
    output= x + " " + inunits;
  }
   else if (inunits=="inches"&& outunits=="feet"){
