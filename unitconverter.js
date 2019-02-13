@@ -118,10 +118,10 @@ var output;
     output= x + " " + inunits + " = " + x*1093.613 + " " + outunits;
   }
   else if (inunits[5].checked && outunits[3].checked){
-    output= x + " " + inunits + " = " + x/ 1.609 + " " + outunits;
+    output= x + " " + inunits + " = " + x/1.609 + " " + outunits;
   }
   else if (inunits[5].checked && outunits[4].checked){
-    output= x + " " + inunits + " = " + x/1000 + " " + outunits;
+    output= x + " " + inunits + " = " + x*1000 + " " + outunits;
   }
 document.getElementById("outputvalue").innerHTML = output;
 }
