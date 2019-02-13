@@ -6,10 +6,10 @@ var output;
   
  // inches to something else
  if  (inunits[0].checked && outunits[0].checked){
-   output= x + " " + inunits;
+   output= x + " " + inunits.value;
  }
   else if (inunits[0].checked && outunits[1].checked){
-    output= x + " " + inunits + " = " + x/12 + " " + outunits;
+    output= x + " " + inunits.value + " = " + x/12 + " " + outunits.value;
   }
   else if (inunits[0].checked && outunits[2].checked){
     output= x + " " + inunits + " = " + x/36 + " " + outunits;
