@@ -122,7 +122,6 @@ var output;
   }
   else if (inunits[5].checked && outunits[4].checked){
     output= x + " " + inunits + " = " + x/1000 + " " + outunits;
- 
-document.getElementById("outputvalue").innerHTML = output.toFixed(3);
   }
+document.getElementById("outputvalue").innerHTML = output.toFixed(3);
 }
