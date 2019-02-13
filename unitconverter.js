@@ -25,104 +25,105 @@ var output;
   }
   
   // feet to something else
-  if  (inunits=="feet" && outunits=="feet"){
+  if  (inunits[1].checked && outunits[1].checked){
    output= x + " " + inunits;
  }
-  else if (inunits=="feet"&& outunits=="inches"){
+  else if (inunits[1].checked && outunits[0].checked){
     output= x + " " + inunits + " = " + x*12 + " " + outunits;
   }
-  else if (inunits=="feet"&& outunits=="yards"){
+  else if (inunits[1].checked && outunits[2].checked){
     output= x + " " + inunits + " = " + x/3 + " " + outunits;
   }
-  else if (inunits=="feet"&& outunits=="miles"){
+  else if (inunits[1].checked && outunits[3].checked){
     output= x + " " + inunits + " = " + x/5280 + " " + outunits;
   }
-  else if (inunits=="feet"&& outunits=="meters"){
+  else if (inunits[1].checked && outunits[4].checked){
     output= x + " " + inunits + " = " + x/3.281 + " " + outunits;
   }
-  else if (inunits=="feet"&& outunits=="kilometers"){
+  else if (inunits[1].checked && outunits[5].checked){
     output= x + " " + inunits + " = " + x/3280.84 + " " + outunits;
   }
   
   // yards to something else
-  if  (inunits=="yards" && outunits=="yards"){
+  if  (inunits[2].checked && outunits[2].checked){
    output= x + " " + inunits;
  }
-  else if (inunits=="yards"&& outunits=="inches"){
+  else if (inunits[2].checked && outunits[0].checked){
     output= x + " " + inunits + " = " + x*36 + " " + outunits;
   }
-  else if (inunits=="yards"&& outunits=="feet"){
+  else if (inunits[2].checked && outunits[1].checked){
     output= x + " " + inunits + " = " + x*3 + " " + outunits;
   }
-  else if (inunits=="yards"&& outunits=="miles"){
+  else if (inunits[2].checked && outunits[3].checked){
     output= x + " " + inunits + " = " + x/1760 + " " + outunits;
   }
-  else if (inunits=="yards"&& outunits=="meters"){
+  else if (inunits[2].checked && outunits[4].checked){
     output= x + " " + inunits + " = " + x/1.094 + " " + outunits;
   }
-  else if (inunits=="yards"&& outunits=="kilometers"){
+  else if (inunits[2].checked && outunits[5].checked){
     output= x + " " + inunits + " = " + x/1093.613 + " " + outunits;
   }
   
   // miles to something else
-  if  (inunits=="miles" && outunits=="miles"){
+  if  (inunits[3].checked && outunits[3].checked){
    output= x + " " + inunits;
  }
-  else if (inunits=="miles"&& outunits=="inches"){
+  else if (inunits[3].checked && outunits[0].checked){
     output= x + " " + inunits + " = " + x*63360 + " " + outunits;
   }
-  else if (inunits=="miles"&& outunits=="feet"){
+  else if (inunits[3].checked && outunits[1].checked){
     output= x + " " + inunits + " = " + x*5280 + " " + outunits;
   }
-  else if (inunits=="miles"&& outunits=="yards"){
+  else if (inunits[3].checked && outunits[2].checked){
     output= x + " " + inunits + " = " + x*1760 + " " + outunits;
   }
-  else if (inunits=="miles"&& outunits=="meters"){
+  else if (inunits[3].checked && outunits[4].checked){
     output= x + " " + inunits + " = " + x*1609.344 + " " + outunits;
   }
-  else if (inunits=="miles"&& outunits=="kilometers"){
+  else if (inunits[3].checked && outunits[5].checked){
     output= x + " " + inunits + " = " + x*1.609 + " " + outunits;
   } 
   
   // meters to something else
-  if  (inunits=="meters" && outunits=="meters"){
+  if  (inunits[4].checked && outunits[4].checked){
    output= x + " " + inunits;
  }
-  else if (inunits=="meters"&& outunits=="inches"){
+  else if (inunits[4].checked && outunits[0].checked){
     output= x + " " + inunits + " = " + x*39.37 + " " + outunits;
   }
-  else if (inunits=="meters"&& outunits=="feet"){
+  else if (inunits[4].checked && outunits[1].checked){
     output= x + " " + inunits + " = " + x*3.281 + " " + outunits;
   }
-  else if (inunits=="meter"&& outunits=="yards"){
+  else if (inunits[4].checked && outunits[2].checked){
     output= x + " " + inunits + " = " + x*1.094 + " " + outunits;
   }
-  else if (inunits=="meters"&& outunits=="miles"){
+  else if (inunits[4].checked && outunits[3].checked){
     output= x + " " + inunits + " = " + x/1609.344 + " " + outunits;
   }
-  else if (inunits=="meters"&& outunits=="kilometers"){
+  else if (inunits[4].checked && outunits[5].checked){
     output= x + " " + inunits + " = " + x/1000 + " " + outunits;
   } 
   
   // kilometers to something else
-  if  (inunits=="kilometers" && outunits=="kilometers"){
+  if  (inunits[5].checked && outunits[5].checked){
    output= x + " " + inunits;
  }
-  else if (inunits=="kilometers"&& outunits=="inches"){
+  else if (inunits[5].checked && outunits[0].checked){
     output= x + " " + inunits + " = " + x*39370.079 + " " + outunits;
   }
-  else if (inunits=="kilometers"&& outunits=="feet"){
+  else if (inunits[5].checked && outunits[1].checked){
     output= x + " " + inunits + " = " + x*3280.84 + " " + outunits;
   }
-  else if (inunits=="kilometers"&& outunits=="yards"){
+  else if (inunits[5].checked && outunits[2].checked){
     output= x + " " + inunits + " = " + x*1093.613 + " " + outunits;
   }
-  else if (inunits=="kilometers"&& outunits=="miles"){
+  else if (inunits[5].checked && outunits[3].checked){
     output= x + " " + inunits + " = " + x/ 1.609 + " " + outunits;
   }
-  else if (inunits=="kilometers"&& outunits=="kilometers"){
+  else if (inunits[5].checked && outunits[4].checked){
     output= x + " " + inunits + " = " + x/1000 + " " + outunits;
  
+    var outputvalue
 document.getElementById("outputvalue").innerHTML = output;
   }
 }
