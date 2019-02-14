@@ -1,4 +1,4 @@
-require(["esri/Map", "esri/views/MapView"], function(
+function(
   Map,
   MapView
 ) {
