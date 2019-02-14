@@ -28,8 +28,8 @@ require(["esri/Map", "esri/views/MapView"], function(Map, MapView) {
     },
     geometry: {
       type: "point",
-      longitude: 36.391342, 
-      latitude: 25.458856,
+      longitude: 25.458856, 
+      latitude: 36.391342,
     },
     popupTemplate: {
       title: "Santorini, Greece",
@@ -209,7 +209,7 @@ require(["esri/Map", "esri/views/MapView"], function(Map, MapView) {
     },
     popupTemplate: {
       title: "Southland, New Zealand",
-      content: "<img src='https://www.google.com/imgres?imgurl=http%3A%2F%2Fdanny.oz.au%2Ftravel%2Fnew-zealand%2Fp%2F1669-milford-sound.jpg&imgrefurl=http%3A%2F%2Fdanny.oz.au%2Ftravel%2Fnew-zealand%2F&docid=6KtVjnVWfsu3uM&tbnid=S8GJZm3dZlrIIM%3A&vet=10ahUKEwiZrLv4yrrgAhUH7qwKHSXxCjcQMwhtKA8wDw..i&w=760&h=570&bih=579&biw=1280&q=southland%20New%20Zealand&ved=0ahUKEwiZrLv4yrrgAhUH7qwKHSXxCjcQMwhtKA8wDw&iact=mrc&uact=8' alt='Southland, New Zealand' height='150'>"
+      content: "<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfr-eYttDGFoeT69mn-jIVmI4NI0jK3YYN_YdYhPuRMeFauuqLAw' alt='Southland, New Zealand' height='150'>"
     }
   });
   
