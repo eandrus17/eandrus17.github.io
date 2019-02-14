@@ -1,29 +1,29 @@
-
+<!DOCTYPE html>
 <html>
-  <!--Gracias to Camille for an outline of how to do this<3-->
+<!--Gracias to Camille for an outline of how to do this<3-->
+  <head>
   <head>
     <title>Yreka, CA</title>
-  <link rel="stylesheet" href="hometownmap.css">
     <style>
+       /* Set the size of the div element that contains the map */
       #mymap {
-        height: 400px
-        width: 100%;
-      }
-      
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
     </style>
   </head>
   <body>
     <h1> Hometown Map-Yreka, CA</h1>
-     <div id="mymap"></div>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXS6eLxCWdf31JokswS3GbO582iuY0PqI">
+    <div id="mymap"></div>
     <script>
-      function showmap() {
-       var mapvar = new google.maps.Map(document.getElementById('mymap'),{
+
+function initMap() {
+       var map = new google.maps.Map(document.getElementById('mymap'),{
           center: {lat: 41.7335406, lng: -122.6484536},
-          zoom: 8
+          zoom: 12
         });
-        
-//define coordinates for markers
+  
+  //define coordinates for markers
       var homeXY = {lat: 41.735415, lng: -122.610963};
       var churchXY = {lat: 41.734513, lng: -122.651745}; 
       var schoolXY = {lat: 41.741260, lng: -122.637688};
@@ -52,51 +52,50 @@ content: bbearinfo});
 //Create Markers
         var markhome = new google.maps.Marker({
 position: homeXY,
-map: mapvar,
+map: map,
 title: "Home"
 });
         var markchurch = new google.maps.Marker({
 position: churchXY,
-map: mapvar,
+map: map,
 title: "Church"
 });
         var markschool = new google.maps.Marker({
 position: schoolXY,
-map: mapvar,
+map: map,
 title: "Yreka High School"
 });
         var marknorth = new google.maps.Marker({
 position: northXY,
-map: mapvar,
+map: map,
 title: "North Street"
 });
         var markbbear = new google.maps.Marker({
 position: bbearXY,
-map: mapvar,
+map: map,
 title: "Black Bear Diner"
 });
         
         markhome.addListener('click', function() {
-homewindow.open(mapvar, markhome);
+homewindow.open(map, markhome);
 });
         markchurch.addListener('click', function() {
-churchwindow.open(mapvar, markchurch);
+churchwindow.open(map, markchurch);
 });
         markschool.addListener('click', function() {
-schoolwindow.open(mapvar, markschool);
+schoolwindow.open(map, markschool);
 });
         marknorth.addListener('click', function() {
-northwindow.open(mapvar, marknorth);
+northwindow.open(map, marknorth);
 });
         markbbear.addListener('click', function() {
-bbearwindow.open(mapvar, markbbear);
-});      
-      }
-      showmap();
-    </script>
+bbearwindow.open(map, markbbear);
+}); 
 
-    
+}
     </script>
-    
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXS6eLxCWdf31JokswS3GbO582iuY0PqI&callback=initMap">
+    </script>
   </body>
 </html>
