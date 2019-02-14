@@ -50,8 +50,8 @@ require(["esri/Map", "esri/views/MapView"], function(Map, MapView) {
     },
     geometry: {
       type: "point",
-      longitude: 51.457009,  
-      latitude: -115.907666,
+      longitude: -115.907666,  
+      latitude: 51.457009,
     },
     popupTemplate: {
       title: "Banff, Canada",
@@ -72,8 +72,8 @@ require(["esri/Map", "esri/views/MapView"], function(Map, MapView) {
     },
     geometry: {
       type: "point",
-      longitude: 27.708318,   
-      latitude: 85.324415,
+      longitude: 85.324415,   
+      latitude: 27.708318,
     },
     popupTemplate: {
       title: "Kathmandu, Nepal",
@@ -94,8 +94,8 @@ require(["esri/Map", "esri/views/MapView"], function(Map, MapView) {
     },
     geometry: {
       type: "point",
-      longitude: 31.759920,   
-      latitude: 35.219934,
+      longitude: 35.219934,   
+      latitude: 31.759920,
     },
     popupTemplate: {
       title: "Jerusalem, Israel",
@@ -116,8 +116,8 @@ require(["esri/Map", "esri/views/MapView"], function(Map, MapView) {
     },
     geometry: {
       type: "point",
-      longitude: 50.087118,   
-      latitude: 14.447315,
+      longitude: 14.447315,   
+      latitude: 50.087118,
     },
     popupTemplate: {
       title: "Prague, Czechia",
@@ -138,8 +138,8 @@ require(["esri/Map", "esri/views/MapView"], function(Map, MapView) {
     },
     geometry: {
       type: "point",
-      longitude: -16.502083,   
-      latitude: -151.741787,
+      longitude: -151.741787,   
+      latitude: -16.502083,
     },
     popupTemplate: {
       title: "Bora Bora, French Polynesia",
@@ -160,12 +160,12 @@ require(["esri/Map", "esri/views/MapView"], function(Map, MapView) {
     },
     geometry: {
       type: "point",
-      longitude: 48.852251,   
-      latitude: 2.352668,
+      longitude: 2.352668,   
+      latitude: 48.852251,
     },
     popupTemplate: {
       title: "Paris, France",
-      content: "<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoV6jhELCSwtP05jT_iVq3xr-0qVoD3PZEH_mELsD2Yv8zY5yuXA' alt='Paris, France' height='150'>";
+      content: "<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoV6jhELCSwtP05jT_iVq3xr-0qVoD3PZEH_mELsD2Yv8zY5yuXA' alt='Paris, France' height='150'>"
     }
   });
   
@@ -182,8 +182,8 @@ require(["esri/Map", "esri/views/MapView"], function(Map, MapView) {
     },
     geometry: {
       type: "point",
-      longitude: -22.924385,  
-      latitude: -43.189819,
+      longitude: -43.189819,   
+      latitude: -22.924385,
     },
     popupTemplate: {
       title: "Rio de Janeiro, Brazil",
@@ -204,12 +204,12 @@ require(["esri/Map", "esri/views/MapView"], function(Map, MapView) {
     },
     geometry: {
       type: "point",
-      longitude: -45.682037,   
-      latitude: 167.918975,
+      longitude: 167.918975,  
+      latitude: -45.682037,
     },
     popupTemplate: {
       title: "Southland, New Zealand",
-      content: "<img src='https://www.google.com/imgres?imgurl=http%3A%2F%2Fdanny.oz.au%2Ftravel%2Fnew-zealand%2Fp%2F1669-milford-sound.jpg&imgrefurl=http%3A%2F%2Fdanny.oz.au%2Ftravel%2Fnew-zealand%2F&docid=6KtVjnVWfsu3uM&tbnid=S8GJZm3dZlrIIM%3A&vet=10ahUKEwiZrLv4yrrgAhUH7qwKHSXxCjcQMwhtKA8wDw..i&w=760&h=570&bih=579&biw=1280&q=southland%20New%20Zealand&ved=0ahUKEwiZrLv4yrrgAhUH7qwKHSXxCjcQMwhtKA8wDw&iact=mrc&uact=8' alt='Southland, New Zealand' height='150'>";
+      content: "<img src='https://www.google.com/imgres?imgurl=http%3A%2F%2Fdanny.oz.au%2Ftravel%2Fnew-zealand%2Fp%2F1669-milford-sound.jpg&imgrefurl=http%3A%2F%2Fdanny.oz.au%2Ftravel%2Fnew-zealand%2F&docid=6KtVjnVWfsu3uM&tbnid=S8GJZm3dZlrIIM%3A&vet=10ahUKEwiZrLv4yrrgAhUH7qwKHSXxCjcQMwhtKA8wDw..i&w=760&h=570&bih=579&biw=1280&q=southland%20New%20Zealand&ved=0ahUKEwiZrLv4yrrgAhUH7qwKHSXxCjcQMwhtKA8wDw&iact=mrc&uact=8' alt='Southland, New Zealand' height='150'>"
     }
   });
   
@@ -226,8 +226,8 @@ require(["esri/Map", "esri/views/MapView"], function(Map, MapView) {
     },
     geometry: {
       type: "point",
-      longitude: 41.885925,  
-      latitude: 12.505941, 
+      longitude: 12.505941, 
+      latitude: 41.885925,
     },
     popupTemplate: {
       title: "Rome, Italy",
@@ -235,6 +235,3 @@ require(["esri/Map", "esri/views/MapView"], function(Map, MapView) {
     }
   });
 });
-
-
- 
