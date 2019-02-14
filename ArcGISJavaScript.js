@@ -1,7 +1,6 @@
 var map
 
-require(["esri/Map", "esri/views/MapView"], function(Map, MapView) 
-  {
+require(["esri/Map", "esri/views/MapView"], function(Map, MapView) {
   const map = new Map({
     basemap: "hybrid"
   });
