@@ -121,7 +121,7 @@ require(["esri/Map", "esri/views/MapView"], function(Map, MapView) {
     },
     popupTemplate: {
       title: "Prague, Czechia",
-      content: "<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAH98uaP0SiX1xdxtZV96tX0Yg4yhPGOWObUtuO_kSJxQeGBei' alt='Prague, Czechia' height='150'>";
+      content: "<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAH98uaP0SiX1xdxtZV96tX0Yg4yhPGOWObUtuO_kSJxQeGBei' alt='Prague, Czechia' height='150'>"
     }
   });
   
