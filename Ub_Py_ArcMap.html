@@ -15,11 +15,9 @@
   </style>
     <link rel="stylesheet" href="https://js.arcgis.com/4.8/esri/css/main.css">
   <script src="https://js.arcgis.com/4.8/"></script>
-</head>
-<body>
-    <!--Map script-->
-   <script>
-    var map
+   <!--Map script-->
+    <script>     
+var map
 
 require(["esri/Map", "esri/views/MapView"], function(Map, MapView) {
   const map = new Map({
@@ -37,11 +35,13 @@ require(["esri/Map", "esri/views/MapView"], function(Map, MapView) {
   });
     
     </script>
+</head>
+<body>
  <!-- Call Map-->
     <div id="viewDiv"></div>  
     
     
-    
+ <!--footer-->
 <hr> Emily Andrus &copy;
     <p>Assignment 6: Use Ubuntu and PyCharm to Show your Data in ArcMap JavaScript</p>
     <p id="date"></p>
