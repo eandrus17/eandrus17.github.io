@@ -41,10 +41,11 @@ require(["esri/Map","esri/layers/MapImageLayer","esri/views/MapView"], function(
               
         });
     var map = new Map({
-    basemap: "hybrid"
+    basemap: "hybrid",
+    layers: [layer]
   });
   
-  const view = new MapView({
+  var view = new MapView({
     container: "viewDiv",
     map: map,
     zoom: 12,
