@@ -41,7 +41,6 @@ require([
   visible: true
   }
   ]
-  
   });
 
 var map = new Map({
@@ -58,7 +57,8 @@ center: {
         longitude: -111.673219
     }
 });
-    map.add(layer)
+     map.add(layer) 
+});
     layer.when(function() {
           view.goTo(layer.fullExtent);
         });
