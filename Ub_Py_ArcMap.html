@@ -21,39 +21,42 @@
   <script src="https://js.arcgis.com/4.8/"></script>
   
     <!--Map script-->
-    <script> 
-    
-require(["esri/Map","esri/layers/MapImageLayer","esri/views/MapView"], function(Map, MapImageLayer, MapView){
+    <script>
+require([
+"esri/Map",
+"esri/views/MapView",
+"esri/layers/MapImageLayer"
+], function(Map, MapView, MapImageLayer){
   var layer = new MapImageLayer({
-    url: "https://http://geoserver2.byu.edu/arcgis/rest/services/GoConnected/GoOnGreen/MapServer",
-      sublayers:[
-          {
-              id: 2,
-              visible: true
-          }, {
-              id: 1,
-              visible: true
-          }, {
-              id: 0,
-              visible: true
-          }
-          ]
-              
-        });
-    var map = new Map({
-    basemap: "hybrid",
-    layers: [layer]
+  url: "https://http://geoserver2.byu.edu/arcgis/rest/services/GoConnected/GoOnGreen/MapServer",
+  sublayers: [
+  {
+  id: 0,
+  visible: true
+  }, {
+  id: 1,
+  visible: true
+  }, {
+  id: 2,
+  visible: true
+  }
+  ]
   });
-  
-  var view = new MapView({
-    container: "viewDiv",
-    map: map,
-    zoom: 12,
-    center: {
+
+var map = new Map({
+basemap: "satellite",
+layers: [layer]
+});
+
+var view = new MapView({
+container: "viewDiv",
+map: map,
+zoom: 5,
+center: {
         latitude: 40.207877,
         longitude: -111.673219
     }
-  });
+});
     layer.when(function() {
           view.goTo(layer.fullExtent);
         });
