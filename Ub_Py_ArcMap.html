@@ -52,6 +52,15 @@ require(["esri/layers/MapImageLayer"], function(MapImageLayer){
           ]
               
         });
+    const layview = new MapView({
+    container: "layviewDiv",
+    map: map,
+    zoom: 12,
+    center: {
+        latitude: 40.207877,
+        longitude: -111.673219
+    }
+  });
      });
   });
     </script>
@@ -61,7 +70,7 @@ require(["esri/layers/MapImageLayer"], function(MapImageLayer){
     <h1> Roads in Utah </h1>
  <!-- Call Map-->
     <div id="viewDiv"></div>  
-    
+    <div id="layviewDiv"></div>
     
  <!--footer-->
 <hr> Emily Andrus &copy; 2019
