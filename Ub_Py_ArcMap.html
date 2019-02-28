@@ -35,6 +35,14 @@ require(["esri/Map", "esri/views/MapView"], function(Map, MapView) {
     }
   });
 });
+        require(["esri/layers/MapImageLayer"], function(MapImageLayer){
+  var layer = new MapImageLayer({
+    url: "https://http://geoserver2.byu.edu/arcgis/rest/services/GoConnected/GoOnGreen/MapServer"
+  });
+  map.add(0);  
+  map.add(1);
+  map.add(2);
+});
     </script>
 </head>
 <body>
