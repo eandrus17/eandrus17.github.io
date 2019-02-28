@@ -44,14 +44,14 @@ require([
   });
 
 var map = new Map({
-basemap: "satellite",
+basemap: "hybrid",
 layers: [layer]
 });
 
 var view = new MapView({
 container: "viewDiv",
 map: map,
-zoom: 5,
+zoom: 12,
 center: {
         latitude: 40.207877,
         longitude: -111.673219
