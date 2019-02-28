@@ -17,23 +17,7 @@
     <link rel="stylesheet" href="https://js.arcgis.com/4.8/esri/css/main.css">
   <script src="https://js.arcgis.com/4.8/"></script>
    <!--Map script-->
-    <script>     
-var map
-
-require(["esri/Map", "esri/views/MapView"], function(Map, MapView) {
-  const map = new Map({
-    basemap: "hybrid"
-  });
-  
-  const view = new MapView({
-    container: "viewDiv",
-    map: map,
-    zoom: 12,
-    center: {
-        latitude: 40.207877,
-        longitude: -111.673219
-    }
-  });
+    <script> 
     
 require(["esri/layers/MapImageLayer"], function(MapImageLayer){
   var layer = new MapImageLayer({
@@ -52,8 +36,15 @@ require(["esri/layers/MapImageLayer"], function(MapImageLayer){
           ]
               
         });
-    const layview = new MapView({
-    container: "layviewDiv",
+    var map
+
+require(["esri/Map", "esri/views/MapView"], function(Map, MapView) {
+  const map = new Map({
+    basemap: "hybrid"
+  });
+  
+  const view = new MapView({
+    container: "viewDiv",
     map: map,
     zoom: 12,
     center: {
@@ -70,7 +61,7 @@ require(["esri/layers/MapImageLayer"], function(MapImageLayer){
     <h1> Roads in Utah </h1>
  <!-- Call Map-->
     <div id="viewDiv"></div>  
-    <div id="layviewDiv"></div>
+   
     
  <!--footer-->
 <hr> Emily Andrus &copy; 2019
