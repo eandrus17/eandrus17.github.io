@@ -34,8 +34,8 @@ require(["esri/Map", "esri/views/MapView"], function(Map, MapView) {
         longitude: -111.673219
     }
   });
-});
-        require(["esri/layers/MapImageLayer"], function(MapImageLayer){
+    
+require(["esri/layers/MapImageLayer"], function(MapImageLayer){
   var layer = new MapImageLayer({
     url: "https://http://geoserver2.byu.edu/arcgis/rest/services/GoConnected/GoOnGreen/MapServer",
       sublayers:[
