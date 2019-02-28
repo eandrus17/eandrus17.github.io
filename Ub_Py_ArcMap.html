@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>ArcMap in JavaScript</title>
+   
+    <!--CSS-->
     <style>
     html,
     body,
@@ -14,12 +16,14 @@
     }
     h1 {font-size: 40px; color: green; background-color: white; text-align: center;}
   </style>
+    
     <link rel="stylesheet" href="https://js.arcgis.com/4.8/esri/css/main.css">
   <script src="https://js.arcgis.com/4.8/"></script>
-   <!--Map script-->
+  
+    <!--Map script-->
     <script> 
     
-require(["esri/layers/MapImageLayer"], function(MapImageLayer){
+require(["esri/Map","esri/layers/MapImageLayer","esri/views/MapView"], function(Map, MapImageLayer, MapView){
   var layer = new MapImageLayer({
     url: "https://http://geoserver2.byu.edu/arcgis/rest/services/GoConnected/GoOnGreen/MapServer",
       sublayers:[
@@ -36,10 +40,7 @@ require(["esri/layers/MapImageLayer"], function(MapImageLayer){
           ]
               
         });
-    var map
-
-require(["esri/Map", "esri/views/MapView"], function(Map, MapView) {
-  const map = new Map({
+    var map = new Map({
     basemap: "hybrid"
   });
   
@@ -52,14 +53,19 @@ require(["esri/Map", "esri/views/MapView"], function(Map, MapView) {
         longitude: -111.673219
     }
   });
+    layer.when(function() {
+          view.goTo(layer.fullExtent);
+        });
      });
   });
     </script>
 </head>
 <body>
+   
     <!--Title-->
     <h1> Roads in Utah </h1>
- <!-- Call Map-->
+ 
+    <!-- Call Map-->
     <div id="viewDiv"></div>  
    
     
